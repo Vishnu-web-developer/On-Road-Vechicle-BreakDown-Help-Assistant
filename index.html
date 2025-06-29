@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Road-Man </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="./assets/img/log.jpg" rel="icon">
+  <link href="./assets/img/log.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eNno
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .action_container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    input,
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    #map {
+      width: 100%;
+      height: 200px;
+      margin-top: 10px;
+    }
+
+    .worker-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .worker-card {
+      background: white;
+      text-align: left;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Road-Man</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="./ASSISTENT.HTML" class="active">Login Up</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="./admin.html">Admin Form</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <h1>On-Road Vehicle BreakDown Help Assistance</h1>
+            <p>We are team of talented WorkersWith Best Services</p>
+            <div class="d-flex">
+              <a href="#action" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="./assets/img/WhatsApp Image 2025-04-06 at 21.33.05_ba2dabcc.jpg" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="services" class="featured-services section">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Services<br></span>
+        <h2>Services</h2>
+      </div>
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-car-front"></i></div>
+              <h4><a href="./ASSISTENT.HTML" class="stretched-link">Flat Tire Assistance
+              </a></h4>
+              <p>Roadside assistance providers dispatch professionals to your location to either repair the flat or, if necessary, replace the tire with a spare.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-fuel-pump-fill"></i></div>
+              <h4><a href="./ASSISTENT.HTML" class="stretched-link">Fuel Delivery
+              </a></h4>
+              <p>Roadside assistance services can deliver fuel to your location, ensuring you can reach the nearest gas station without being stranded.
+
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-car-crash"></i></i></div>
+              <h4><a href="file:///C:/Users/asus/Downloads/eNno-1.0.0/admin.html" class="stretched-link">Repair</a></h4>
+              <p>Get instant onspot support  within 30 minutes for your bikes & cars from issue is major and can be fixed on spot 
+Do not worry any more we will send an experienced & professional bike & car repair mechanic nearby you to help you faster.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>About Us<br></span>
+        <h2>About</h2>
+        <p>On-Road Vehicle Breakdown Assistance(Road-Man)
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="./assets/img/about-img.jpg" class="img-fluid" alt="">
+            
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Stranded? We're Just a Call Away.
+            </h3>
+            <p class="fst-italic">
+              Whether you're stuck on the highway, facing a flat tire in the city, or dealing with a dead battery in the middle of nowhere — our 24/7 on-road breakdown assistance has your back. We provide fast, reliable, and professional help wherever you are.
+
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Battery Jumpstart – Quick jumpstart to get your vehicle running again.
+
+              </span>
+              </li>
+              <li><i class="bi bi-check2-all"></i> <span>Fuel Delivery – Emergency fuel delivery if you run out of gas.
+
+                  </span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Minor Repairs – On-spot fixes for simple mechanical issues.</span></li>
+            </ul>
+            <p>
+              Fast Response Time, Trusted & Experienced Technicians, Nationwide Coverage, Affordable Plans & On-Demand Services
+
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+    <!-- Action Section -->
+    <!-- 🚨 SECTION 1: Assistance Form -->
+     
+     
+    <div class="action_container" id="action">
+      <h2>Need Assistance?</h2>
+      <p>Enter your details and share your location.</p>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="tel" id="phone" placeholder="Your Phone Number" required>
+      <button onclick="getLocation()">Share Location</button>
+      <div id="map"></div>
+      <button onclick="requestHelp()">Request Assistance</button>
+    </div>
+
+    <!-- 🚧 SECTION 2: Worker Upload Details -->
+    <div class="container section-title" data-aos="fade-up">
+      <span>Available Workers / Shops<br></span>
+      <h2>Available Workers / Shops</h2>
+      <div class="worker-container" id="workerList"></div>
+    </div>
+
+  </main>
+
+  <!-- <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">eNno</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Road-Man</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="#">N.VishnuVarthan</a> Distributed by <a
+          href=“https://themewagon.com>A.V.V.M
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+   function renderWorkerList(isAdmin = false) {
+  const workerList = document.getElementById("workerList");
+  const workers = JSON.parse(localStorage.getItem("workers")) || [];
+
+  if (workers.length === 0) {
+    workerList.innerHTML = "<p>No workers found. Please check back later.</p>";
+    return;
+  }
+
+  workerList.innerHTML = ""; // clear old data
+  workers.forEach((worker, index) => {
+    const card = `
+      <div class="worker-card border p-3 mb-3 rounded shadow-sm">
+        <h4>${worker.shopName}</h4>
+        <p><strong>Owner:</strong> ${worker.ownerName}</p>
+        <p><strong>Address:</strong> ${worker.shopAddress}</p>
+        <p><strong>Phone 1:</strong> ${worker.phone1}</p>
+        ${worker.phone2 ? `<p><strong>Phone 2:</strong> ${worker.phone2}</p>` : ""}
+        <a href="${worker.mapLink}" target="_blank">View on Map</a>
+        ${isAdmin ? `<button onclick="deleteWorker(${index})" class="btn btn-danger btn-sm mt-2">Delete</button>` : ""}
+      </div>
+    `;
+    workerList.innerHTML += card;
+  });
+}
+
+  </script>
+  <script>
+    renderWorkerList(false); // no delete button for users
+  </script>
+  
+  
+
+</body>
+
+</html>
